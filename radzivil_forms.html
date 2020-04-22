@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTC-8">
+      <link rel="stylesheet" href="css/style_for_forms.css">
+      <title>Cоздать резюме</title>
+      <script>
+        functiuon ;First();{
+            XX=document.getElementById('color').value;
+  
+            box = document.getElementById('box');
+            box.style.color=xx
+            }
+      </script>
+   </head>
+   <body>
+       <form action="" method="POST" class="form">
+       <table>
+           <tr>
+               <td><img src="images/hh_logo.png"></td>
+               <td id="search" align="center">
+                 Поиск вашего резюме <input type="text" placeholder="Введите вашу фамилию">
+                 <input type="button" name="submit" value="Поиск" id="search_button"><br>
+                 <input type="radio" name="search_cv"><label>в Google</label>
+                 <input type="radio" name="search_cv"><label>на сайте</label</td>
+                 <td><a color="white" href="https://feedback.hh.ru/knowledge-base/articles/2000">Помощь</a></td>
+                </tr>
+       </table>
+       <h1 style="margin-left:30px;">Ваше резюме</h1>
+       <br>
+          <input type="button" id="ok" name="Order" value="Загрузить резюме">
+           <select name="lang" id="lang">
+           <option>По-русcски</option>
+           <option>In-english</option>
+            </select> <br>
+        <ol>
+           <p id="contacts">Контактные данные</p>
+            <li><label for="First_name">Имя</label><input type="text"  name="First_name"id="First_name"></li>
+           <li><label for="Last_name">Фамилия</label><input type="text" name="Last_name" id="Last_name"></div></li>
+           <li><label for="Mobile_number"> Мобильный телефон</label><input type="text" name="Mobile_number" 
+            id="Mobile_number" pattern="\+[0-9]{13}" placeholder="+375"></li>
+            <li><label for="email" aria-required="true">Ваш e-mail</label><input type="email" name="email"></li>
+            <li><label for="City">Город проживания</label><select name="City" id="City">
+                <option>Минск</option>
+                <option>Москва</option>
+                <option>Гомель</option>
+                <option>Могилев</option>
+            </select></li>
+        </ol>
+           <p id="main_info">Основная Информация</p>
+           <ul>
+           <li><label for="Day_of_Birth">Дата рождения</label>
+            <input type="number" min="1"  max="31"name="Day_of_Birth" id="Day" placeholder="День">
+           <select name="Month">
+            <option>Январь</option>
+            <option>Февраль</option>
+            <option>Март</option>
+            <option>Апрель</option>
+            <option>Май</option>
+            <option>Июнь</option>
+            <option>Июль</option>
+            <option>Август</option>
+            <option>Сентябрь</option>
+            <option>Октябрь</option>
+            <option>Ноябрь</option>
+            <option>Декабрь</option>
+           </select>
+           <input  type="number" maxlength="4" min="1960" max="2004" name="Year_of_Birth"  id="Year"placeholder="Год"></li>
+           <br>
+           <li> <label for="sex">Пол</label><br>
+            <input type="radio" name="sex" value="male" id="male" cheked>Мужской<br>
+            <input type="radio" name="sex" value="female" id="female">Женский</li> 
+        <li><label for="About">Свободно о себе:</label><br>
+        <textarea name="About" placeholder="Введите текст"></textarea></li>
+        </ul>
+        <input type="submit"  name="submit" value="Отправить  резюме">
+        <input type="reset"   name="Clear" value="Очистить резюме">
+       </form>
+       <input type="color" name="color" value="red" onInput="First()" id="color">
+       <div id="box"></div>
+   </body>
+</html>
